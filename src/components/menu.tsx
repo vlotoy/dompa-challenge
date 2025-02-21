@@ -1,23 +1,49 @@
+import { useState } from 'react'
+
+import { Button } from './ui/button'
+
 export function Menu() {
+  const [activeSection, setActiveSection] = useState('')
+
+  function handleClick(elementId: string) {
+    setActiveSection(elementId)
+    document.getElementById(elementId)?.scrollIntoView({ behavior: 'smooth' })
+  }
+
   return (
-    <nav className="hidden sm:flex">
-      <ul className="flex space-x-4">
-        <li>
-          <a href="#hero" className="hover:underline">
-            Início
-          </a>
-        </li>
-        <li>
-          <a href="#features" className="hover:underline">
-            Recursos
-          </a>
-        </li>
-        <li>
-          <a href="#contact" className="hover:underline">
-            Contato
-          </a>
-        </li>
-      </ul>
-    </nav>
+    <div className="hidden sm:flex sm:space-x-4">
+      <Button
+        data-active={activeSection === 'hero'}
+        variant="link"
+        className="text-lg antialiased hover:cursor-pointer"
+        onClick={() => handleClick('hero')}
+      >
+        Inicio
+      </Button>
+      <Button
+        data-active={activeSection === 'about'}
+        variant="link"
+        className="text-lg antialiased hover:cursor-pointer"
+        onClick={() => handleClick('about')}
+      >
+        Sobre
+      </Button>
+      <Button
+        data-active={activeSection === 'portfolio'}
+        variant="link"
+        className="text-lg antialiased hover:cursor-pointer"
+        onClick={() => handleClick('portfolio')}
+      >
+        Trabalhos
+      </Button>
+      <Button
+        data-active={activeSection === 'contact'}
+        variant="link"
+        className="text-lg antialiased hover:cursor-pointer"
+        onClick={() => handleClick('contact')}
+      >
+        Contato
+      </Button>
+    </div>
   )
 }

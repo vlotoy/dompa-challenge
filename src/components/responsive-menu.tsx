@@ -26,8 +26,11 @@ export function ResponsiveMenu() {
           <DropdownMenuItem onClick={() => scrollToElement('hero')}>
             Início
           </DropdownMenuItem>
-          <DropdownMenuItem onClick={() => scrollToElement('features')}>
-            Recursos
+          <DropdownMenuItem onClick={() => scrollToElement('about')}>
+            Sobre
+          </DropdownMenuItem>
+          <DropdownMenuItem onClick={() => scrollToElement('portfolio')}>
+            Trabalhos
           </DropdownMenuItem>
           <DropdownMenuItem onClick={() => scrollToElement('contact')}>
             Contato

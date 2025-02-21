@@ -1,7 +1,15 @@
 import './globals.css'
 
-function App() {
-  return <h1 className="">Hello World</h1>
-}
+import { Header } from './components/header'
+import { Hero } from './components/hero'
+import { ThemeProvider } from './components/theme-provider'
 
-export default App
+export function App() {
+  return (
+    <ThemeProvider defaultTheme="dark" storageKey="dompa-challenge-theme">
+      <title>My Hotsite</title>
+      <Header />
+      <Hero />
+    </ThemeProvider>
+  )
+}

@@ -24,7 +24,7 @@ export function Portfolio() {
 
   return (
     <section id="portfolio">
-      <div className="container mx-auto px-12 py-22 space-y-16">
+      <div className="container mx-auto px-12 py-60 space-y-16">
         <h2 className="text-3xl font-bold text-center">Meus Trabalhos</h2>
         <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((project, index) => (

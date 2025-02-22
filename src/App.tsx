@@ -1,6 +1,7 @@
 import './globals.css'
 
 import { About } from './components/about'
+import { Contact } from './components/contact'
 import { Header } from './components/header'
 import { Hero } from './components/hero'
 import { Portfolio } from './components/portfolio'
@@ -22,6 +23,7 @@ export function App() {
       <Hero />
       <About />
       <Portfolio />
+      <Contact />
     </ThemeProvider>
   )
 }

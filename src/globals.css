@@ -4,8 +4,15 @@
 
 @custom-variant dark (&:is(.dark *));
 
-html {
-  scroll-animation: smooth;
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 :root {
@@ -39,8 +46,8 @@ html {
 .dark {
   --background: hsl(240 10% 3.9%);
   --foreground: hsl(0 0% 98%);
-  --card: hsl(240 10% 3.9%);
-  --card-foreground: hsl(0 0% 98%);
+  --card: hsl(24 9.8% 10%);
+  --card-foreground: hsl(0 0% 95%);
   --popover: hsl(240 10% 3.9%);
   --popover-foreground: hsl(0 0% 98%);
   --primary: hsl(0 0% 98%);
@@ -64,19 +71,7 @@ html {
 }
 
 @theme inline {
-
-  --color-scooter-50: #effbfc;
-  --color-scooter-100: #d7f2f6;
-  --color-scooter-200: #b4e5ed;
-  --color-scooter-300: #80d2e0;
-  --color-scooter-400: #48b6cc;
-  --color-scooter-500: #2998b1;
-  --color-scooter-600: #257b95;
-  --color-scooter-700: #24647a;
-  --color-scooter-800: #255365;
-  --color-scooter-900: #234656;
-  --color-scooter-950: #122e3a;
-
+  --animate-slide-up: slideUp 1s ease-in-out;
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);

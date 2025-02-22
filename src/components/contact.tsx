@@ -13,35 +13,39 @@ export function Contact() {
         <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold">
           Vamos trabalhar juntos?
         </h2>
-        <span className="text-muted-foreground">
+        <span className="text-muted-foreground text-lg">
           Entre em contato comigo por e-mail ou pelas minhas redes sociais
         </span>
       </div>
 
       <div className="space-y-4">
-        <span className="flex items-center gap-2">
+        <span className="flex items-center gap-2 hover:animate-grow hover:text-rose-500 dark:hover:text-rose-500">
           <img
             src={mail}
             alt="Ícone de e-mail"
             className="dark:filter dark:invert"
           />
-          victor.tostes@gmail.com
+          <a 
+            target="_blank"
+            href="mailto:victor.tostes@gmail.com">
+              victor.tostes@gmail.com
+          </a>          
         </span>
-        <span className="flex items-center justify-center gap-2">
+        <span className="flex items-center justify-center gap-2 hover:animate-grow hover:text-rose-500 dark:hover:text-rose-500">
           <img
             src={git}
             alt="Ícone do GitHub"
             className="dark:filter dark:invert"
           />
-          vlotoy
+          <a target="_blank" href="https://github.com/vlotoy">vlotoy</a>          
         </span>
-        <span className="flex items-center justify-center gap-2">
+        <span className="flex items-center justify-center gap-2 hover:animate-grow hover:text-rose-500 dark:hover:text-rose-500">
           <img
             src={linkedin}
             alt="Ícone do Linkedin"
             className="dark:filter dark:invert"
           />
-          victor-loyola
+          <a target="_blank" href="https://linkedin.com/in/victor-loyola">victor-loyola</a>          
         </span>
       </div>
       <div className="flex flex-col items-center justify-center">

@@ -17,22 +17,22 @@ export function ResponsiveMenu() {
     <div className="sm:hidden size-8">
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
-          <Button variant="outline" size="icon">
-            <MenuIcon className="absolute h-[1.2rem] w-[1.2rem] transition-all dark:rotate-0 dark:scale-100" />
+          <Button variant="outline" size="icon" className='hover:cursor-pointer'>
+            <MenuIcon className="h-[1.2rem] w-[1.2rem] dark:rotate-0 dark:scale-100" />
             <span className="sr-only">Menu</span>
           </Button>
         </DropdownMenuTrigger>
         <DropdownMenuContent align="end" className="sm:hidden">
-          <DropdownMenuItem onClick={() => scrollToElement('hero')}>
+          <DropdownMenuItem className='hover:cursor-pointer' onClick={() => scrollToElement('hero')}>
             Início
           </DropdownMenuItem>
-          <DropdownMenuItem onClick={() => scrollToElement('about')}>
+          <DropdownMenuItem className='hover:cursor-pointer' onClick={() => scrollToElement('about')}>
             Sobre
           </DropdownMenuItem>
-          <DropdownMenuItem onClick={() => scrollToElement('portfolio')}>
+          <DropdownMenuItem className='hover:cursor-pointer' onClick={() => scrollToElement('portfolio')}>
             Trabalhos
           </DropdownMenuItem>
-          <DropdownMenuItem onClick={() => scrollToElement('contact')}>
+          <DropdownMenuItem className='hover:cursor-pointer' onClick={() => scrollToElement('contact')}>
             Contato
           </DropdownMenuItem>
         </DropdownMenuContent>

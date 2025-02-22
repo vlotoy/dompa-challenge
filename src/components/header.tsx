@@ -5,7 +5,7 @@ import { ThemeToggle } from './theme-toggle'
 
 export function Header() {
   return (
-    <header className="fixed px-6 py-2 z-20 top-0 left-1/2 transform -translate-x-1/2 w-full flex justify-between items-center text-foreground bg-background bg-opacity-80 shadow-md">
+    <header className="fixed px-6 py-2 z-20 w-full flex justify-between items-center text-foreground bg-background bg-opacity-80 shadow-md">
       <div className="flex items-center gap-1">
         <img
           className="h-12 w-16 dark:filter dark:invert"
@@ -13,7 +13,6 @@ export function Header() {
           alt="Logo"
         />
       </div>
-
       <ResponsiveMenu />
       <Menu />
       <ThemeToggle />

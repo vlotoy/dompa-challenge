@@ -4,6 +4,10 @@
 
 @custom-variant dark (&:is(.dark *));
 
+html {
+  scroll-behavior: smooth;
+}
+
 @keyframes slideUp {
   from {
     opacity: 0;
@@ -12,6 +16,15 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes grow {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
   }
 }
 
@@ -72,6 +85,7 @@
 
 @theme inline {
   --animate-slide-up: slideUp 1s ease-in-out;
+  --animate-grow: grow 0.3s ease-in-out forwards;
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);

@@ -6,7 +6,7 @@ interface CardProps {
   description: string
 }
 
-const Card = ({ image, title, description }: CardProps) => {
+export const Card = ({ image, title, description }: CardProps) => {
   const { ref, inView } = useInView({
     triggerOnce: false,
     threshold: 0.2,
@@ -34,5 +34,3 @@ const Card = ({ image, title, description }: CardProps) => {
     </div>
   )
 }
-
-export default Card

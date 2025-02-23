@@ -1,17 +1,18 @@
 export function About() {
   return (
     <section
+      data-testid="about"
       id="about"
-      className=" container mx-auto px-12 pt-20 pb-40 flex flex-col items-center justify-center gap-12 md:flex-row"
+      className="container mx-auto flex flex-col items-center justify-center gap-12 px-12 pt-20 pb-40 md:flex-row"
     >
       <img
-        src='/me.png'
+        src="/me.png"
         alt="Imagem de Victor Loyola"
-        className="size-60 lg:size-100 rounded-2xl shadow-md"
+        className="size-60 rounded-2xl shadow-md lg:size-100"
         loading="lazy"
       />
-      <div className="space-y-6 text-foreground antialiased max-w-[42rem]">
-        <h1 className="font-bold text-3xl text-center">Quem sou eu?</h1>
+      <div className="text-foreground max-w-[42rem] space-y-6 antialiased">
+        <h1 className="text-center text-3xl font-bold">Quem sou eu?</h1>
         <p>
           Proident proident esse minim esse et culpa. Lorem excepteur aliquip
           sunt minim. Id anim irure consequat irure qui incididunt excepteur

@@ -6,11 +6,12 @@ import mail from '../assets/mail.svg'
 export function Contact() {
   return (
     <footer
+      data-testid="contact"
       id="contact"
-      className="w-full p-20 border flex flex-col items-center justify-between gap-10 text-center sm:flex-row"
+      className="flex w-full flex-col items-center justify-between gap-10 border p-20 text-center sm:flex-row"
     >
       <div className="space-y-6">
-        <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold">
+        <h2 className="text-xl font-bold sm:text-2xl lg:text-3xl">
           Vamos trabalhar juntos?
         </h2>
         <span className="text-muted-foreground text-lg">
@@ -19,40 +20,50 @@ export function Contact() {
       </div>
 
       <div className="space-y-4">
-        <span className="flex items-center gap-2 hover:animate-grow hover:text-rose-500 dark:hover:text-rose-500">
+        <span className="hover:animate-grow flex items-center gap-2 hover:text-rose-500 dark:hover:text-rose-500">
           <img
             src={mail}
             alt="Ícone de e-mail"
-            className="dark:filter dark:invert"
+            className="dark:invert dark:filter"
           />
-          <a 
+          <a
             target="_blank"
-            href="mailto:victor.tostes@gmail.com">
-              victor.tostes@gmail.com
-          </a>          
+            href="mailto:victor.tostes@gmail.com"
+            rel="noreferrer"
+          >
+            victor.tostes@gmail.com
+          </a>
         </span>
-        <span className="flex items-center justify-center gap-2 hover:animate-grow hover:text-rose-500 dark:hover:text-rose-500">
+        <span className="hover:animate-grow flex items-center justify-center gap-2 hover:text-rose-500 dark:hover:text-rose-500">
           <img
             src={git}
             alt="Ícone do GitHub"
-            className="dark:filter dark:invert"
+            className="dark:invert dark:filter"
           />
-          <a target="_blank" href="https://github.com/vlotoy">vlotoy</a>          
+          <a target="_blank" href="https://github.com/vlotoy" rel="noreferrer">
+            vlotoy
+          </a>
         </span>
-        <span className="flex items-center justify-center gap-2 hover:animate-grow hover:text-rose-500 dark:hover:text-rose-500">
+        <span className="hover:animate-grow flex items-center justify-center gap-2 hover:text-rose-500 dark:hover:text-rose-500">
           <img
             src={linkedin}
             alt="Ícone do Linkedin"
-            className="dark:filter dark:invert"
+            className="dark:invert dark:filter"
           />
-          <a target="_blank" href="https://linkedin.com/in/victor-loyola">victor-loyola</a>          
+          <a
+            target="_blank"
+            href="https://linkedin.com/in/victor-loyola"
+            rel="noreferrer"
+          >
+            victor-loyola
+          </a>
         </span>
       </div>
       <div className="flex flex-col items-center justify-center">
         <img
           src={logo}
           alt="Logotipo da VL Software"
-          className="dark:filter dark:invert"
+          className="dark:invert dark:filter"
         />
         <span>Todos direitos reservados &copy; {new Date().getFullYear()}</span>
       </div>

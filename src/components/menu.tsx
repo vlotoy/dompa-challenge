@@ -11,14 +11,14 @@ export function Menu() {
   }
 
   return (
-    <div className="hidden sm:flex sm:space-x-4">
+    <div data-testid="menu" className="hidden sm:flex sm:space-x-4">
       <Button
         data-active={activeSection === 'hero'}
         variant="link"
         className="text-lg antialiased hover:cursor-pointer"
         onClick={() => handleClick('hero')}
       >
-        Inicio
+        Início
       </Button>
       <Button
         data-active={activeSection === 'about'}

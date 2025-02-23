@@ -1,0 +1,17 @@
+[
+  {
+    "image": "/card1.png",
+    "title": "2017-2018 | React para feature phones",
+    "description": "Desenvolvimento de aplicativos com as primeiras versões do React para celulares com SO baseado em VanillaJS"
+  },
+  {
+    "image": "/card2.png",
+    "title": "2019-2024 | Aplicações para bancos digitais",
+    "description": "Desenvolvimento de aplicações de serviços bancários participando desde os primeiros conceitos e refinamentos até entrega em produção. Tecnologias utizadas: React, JavaScript, TypeScript, Next.Js, Node.Js, Redux, Context API, React Testing Library, Jest, Styled Components, CSS Modules, Bootstrap"
+  },
+  {
+    "image": "/card3.png",
+    "title": "2025 - Aplicação de monitoramento de pedidos de restaurante",
+    "description": "Projeto com formulário de autenticação e dashboard de acompanhamento de pedidos de uma pizzaria. Tecnologias utilizadas: TypeScript, React 19, React Hook Form, Zod, React Query, Tailwind."
+  }
+]

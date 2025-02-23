@@ -18,7 +18,7 @@ export function Menu() {
         className="text-lg antialiased hover:cursor-pointer"
         onClick={() => handleClick('hero')}
       >
-        Inicio
+        Início
       </Button>
       <Button
         data-active={activeSection === 'about'}

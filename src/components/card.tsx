@@ -14,21 +14,22 @@ export const Card = ({ image, title, description }: CardProps) => {
 
   return (
     <div
+      data-testid="portfolio-card"
       ref={ref}
-      className={`bg-card p-4 rounded-lg shadow-lg text-card-foreground transition-transform duration-1500 space-y-4 ${
+      className={`bg-card text-card-foreground space-y-4 rounded-lg p-4 shadow-lg transition-transform duration-1500 ${
         inView
-          ? 'transform scale-100 animate-slide-up'
-          : 'transform scale-95 opacity-0'
+          ? 'animate-slide-up scale-100 transform'
+          : 'scale-95 transform opacity-0'
       }`}
     >
       <img
         src={image}
         alt={title}
-        className="w-full h-48 object-cover rounded-t-lg"
+        className="h-48 w-full rounded-t-lg object-cover"
         loading="lazy"
       />
       <div className="p-4">
-        <h3 className="text-2xl font-bold mb-2">{title}</h3>
+        <h3 className="mb-2 text-2xl font-bold">{title}</h3>
         <p>{description}</p>
       </div>
     </div>
